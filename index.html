@@ -39,7 +39,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="font-primary">
+<body class="font-primary sm:mx-8 my:4 lg:mx-28 my-16 ">
     <header>
         <!-- Navbar Section -->
         <div>
@@ -55,7 +55,7 @@
                                 </svg>
                             </div>
                             <ul tabindex="0"
-                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
                                 <li class="color-primary"><a>Home</a></li>
                                 <li><a>About</a></li>
                                 <li><a>Pages</a></li>
@@ -63,10 +63,10 @@
                                 <li><a>Contact</a></li>
                             </ul>
                         </div>
-                        <a class="btn btn-ghost text-xl">Hockey<span class="color-primary">’</span>s</a>
+                        <a class="btn btn-ghost font-extrabold text-4xl">Hockey<span class="color-primary">’</span>s</a>
                     </div>
-                    <div class="navbar-center hidden lg:flex">
-                        <ul class="menu menu-horizontal px-1">
+                    <div class="navbar-center hidden lg:flex  text-base ">
+                        <ul class="menu menu-horizontal px-1 ml-8">
                             <li class="color-primary"><a>Home</a></li>
                             <li><a>About</a></li>
                             <li><a>Pages</a></li>
@@ -75,14 +75,50 @@
                         </ul>
                     </div>
                     <div class="navbar-end">
-                        <img src="Images/Frame.svg" alt="" class=" mr-6 " >
-                        <a class="btn">Get Ticket</a>
+                        <img src="Images/Frame.svg" alt="" class="hidden lg:mr-6">
+                        <a class="btn text-white bg-[#FF4240] text-xl sm:ml-6">Get Ticket</a>
                     </div>
                 </div>
             </nav>
         </div>
+                                   <!-- Navbar section ended here -->
     </header>
-    <main></main>
+    <main>  
+
+
+                                <!-- carousel section start -->
+                                
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+    </main>
     <footer></footer>
 
 </body>
